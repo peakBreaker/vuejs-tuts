@@ -1,0 +1,10 @@
+source /usr/share/nvm/init-nvm.sh  # Set up Node Version Manager
+files=($(ls $(pwd)/.git))
+if [ ${#files[@]} -gt 0 ]; then 
+    echo -n "Adding node modules to PATH .. "
+    export PATH=$PATH:$(pwd)/node_modules/.bin/
+    echo "OK!"
+else 
+    echo "You must source this script from repo root"
+fi
+
