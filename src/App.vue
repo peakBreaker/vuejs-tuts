@@ -11,18 +11,19 @@
       </nav>
     </header>
     <main>
-        <HomePage />
+        <RobotBuilder />
     </main>
   </div>
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue';
+import HomePage from './home/HomePage.vue';
+import RobotBuilder from './build/RobotBuilder.vue';
 
 export default {
   name: 'app',
   components: {
-    HomePage,
+    RobotBuilder,
   },
 };
 </script>
@@ -69,5 +70,4 @@ ul {
   vertical-align: middle;
   height: 30px;
 }
-
 </style>
